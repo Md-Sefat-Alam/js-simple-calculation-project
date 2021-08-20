@@ -13,6 +13,7 @@ function buttonControlandSetValue(productType, productTypeCost) {
     if (productType == "memory8gb") {
         memoryPrice.innerText = 0;
 
+
     } else if (productType == "memory16gb") {
         memoryPrice.innerText = 180;
     }
@@ -74,7 +75,7 @@ function totalPrice(pomo) {
     }
     else if (pomo === false) {
         totalOfTotalPrice.innerText = total;
-        pomoMessage.innerText = "Don't matched pomo code";
+        pomoMessage.innerText = "Add pomo code";
         pomoMessage.style.color = "red";
     }
 }
@@ -85,10 +86,9 @@ function totalOfTotalPrice(whoCalling) {
     const getPomoInput = document.getElementById("pomo").value;
 
     //using if function for avoid unnecessary result
-    //if call from function
-    //আমি চাইলেই কুপনটি রিসেট করে দিতে পারতাম কিন্তু কুপন দেওয়ার পরেও যেহেতু উপরের বাটনে ক্লিক করে পরিবর্তন করা যাচ্ছে তার জন্য আমি নিচের সিস্টেমটি তৈরি করেছি যাতে কুপন এর মাধ্যমে কম্পানির লোকসান না হয়। [আসা করি বিষয়টি পসিটিভ্লি নিবেন কেননা ভাইয়া বলেছে বাটোনে ক্লিক করলে ভালু রিসেট হয়ে যাবে]
+    //if call from function and get input emty string
     if (whoCalling == "callFromFunction" && getPomoInput == "") {
-        return;
+        totalPrice(false);
     }
 
     //if call from button || call from function
@@ -99,4 +99,5 @@ function totalOfTotalPrice(whoCalling) {
             totalPrice(false);
         }
     }
+    getPomoElement.value = '';
 }
