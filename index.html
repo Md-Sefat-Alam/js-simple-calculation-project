@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro Pricing</title>
+
+    <!-- link with tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: 0.2s;
+        }
+
+        td {
+            padding: 5px 35px 5px 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="w-10/12 mx-auto my-12">
+        <section>
+            <div class="content_wrapper flex">
+                <div class="left_side w-2/4">
+                    <img class="w-10/12 mx-auto " src="images/mac.png" alt="">
+                </div>
+                <!-- end left side product image work -->
+
+                <div class="right_side w-2/4">
+
+
+                    <div class="mb-16">
+                        <h1 class="text-4xl font-bold mb-4 text-yellow-900">Customize your Blue 24-inch iMac with Apple
+                            M1 chip.</h1>
+
+                        <p class="text-gray-600">Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                            efficiency
+                            cores, 7-core GPU,
+                            and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/ USB 4 ports
+                            Magic Mouse Magic Keyboard - US English</p>
+                    </div>
+                    <!-- end product description -->
+
+
+                    <div>
+
+                        <div class="mb-10">
+                            <h3 class="font-bold mb-2">Memory</h3>
+                            <div>
+                                <button class="border border-black p-1 rounded ">8GB
+                                    unified memory</button>
+                                <button class="border border-black p-1 rounded ">16GB unified memory</button>
+                            </div>
+                        </div>
+                        <!-- end memory selection button -->
+
+                        <div class="mb-10">
+                            <h3 class="font-bold mb-2">Storage</h3>
+                            <div>
+                                <button class="border border-black p-1 rounded ">256GB SSD Storage</button>
+                                <button class="border border-black p-1 rounded ">512GB SSD Storage</button>
+                                <button class="border border-black p-1 rounded ">1TB SSD Storage</button>
+                            </div>
+                        </div>
+                        <!-- end Storage selection button -->
+
+                        <div class="mb-10">
+                            <h3 class="font-bold mb-2">Choose your delivery option</h3>
+                            <div>
+                                <button class="border border-black p-1 rounded ">Friday, Aug 25 FREE Primery
+                                    Delivery</button>
+                                <button class="border border-black p-1 rounded ">Friday, Aug 21 Delivery Charge
+                                    $20</button>
+                            </div>
+                        </div>
+                        <!-- end delevery option button -->
+
+                    </div>
+                    <!-- end selection button part -->
+
+
+                    <div class="mb-16">
+                        <table class="table-auto font-bold">
+                            <tr>
+                                <td>Best Price</td>
+                                <td>$1299</td>
+                            </tr>
+                            <tr>
+                                <td>Extra Memory Cost</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <td>Extra Storage Cost</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <td>Delevery Charge</td>
+                                <td>$0</td>
+                            </tr>
+                            <tfoot class="border-t-2 border-black">
+                                <tr>
+                                    <td>Total Price</td>
+                                    <td>$1299</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- end pricing part -->
+
+                    <div>
+                        <p>Add Pomo code</p>
+                        <input class="border border-gray-500 rounded p-2" placeholder="Enter Pomo code" type="text"
+                            name="" id="pomo">
+                        <button class="p-2 text-white bg-red-600 rounded ">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total_of_total text-center">
+                <h1 class="text-3xl p-4 m-6 rounded-2xl font-bold bg-red-200">Total: $<span>1299</span></h1>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
