@@ -55,9 +55,12 @@
                         <div class="mb-10">
                             <h3 class="font-bold mb-2">Memory</h3>
                             <div>
-                                <button class="border border-black p-1 rounded ">8GB
+                                <button onclick="buttonControlandSetValue('memory8gb','memoryPrice')"
+                                    class="border border-black p-1 rounded ">8GB
                                     unified memory</button>
-                                <button class="border border-black p-1 rounded ">16GB unified memory</button>
+                                <button onclick="buttonControlandSetValue('memory16gb','memoryPrice')"
+                                    class="border border-black p-1 rounded ">16GB
+                                    unified memory</button>
                             </div>
                         </div>
                         <!-- end memory selection button -->
@@ -65,9 +68,12 @@
                         <div class="mb-10">
                             <h3 class="font-bold mb-2">Storage</h3>
                             <div>
-                                <button class="border border-black p-1 rounded ">256GB SSD Storage</button>
-                                <button class="border border-black p-1 rounded ">512GB SSD Storage</button>
-                                <button class="border border-black p-1 rounded ">1TB SSD Storage</button>
+                                <button onclick="buttonControlandSetValue('256gbSSD','storageCost')"
+                                    class="border border-black p-1 rounded ">256GB SSD Storage</button>
+                                <button onclick="buttonControlandSetValue('512gbSSD','storageCost')"
+                                    class="border border-black p-1 rounded ">512GB SSD Storage</button>
+                                <button onclick="buttonControlandSetValue('1tbSSD','storageCost')"
+                                    class="border border-black p-1 rounded ">1TB SSD Storage</button>
                             </div>
                         </div>
                         <!-- end Storage selection button -->
@@ -75,9 +81,11 @@
                         <div class="mb-10">
                             <h3 class="font-bold mb-2">Choose your delivery option</h3>
                             <div>
-                                <button class="border border-black p-1 rounded ">Friday, Aug 25 FREE Primery
+                                <button onclick="buttonControlandSetValue('free','deleveryCharge')"
+                                    class="border border-black p-1 rounded ">Friday, Aug 25 FREE Primery
                                     Delivery</button>
-                                <button class="border border-black p-1 rounded ">Friday, Aug 21 Delivery Charge
+                                <button onclick="buttonControlandSetValue('charge','deleveryCharge')"
+                                    class="border border-black p-1 rounded ">Friday, Aug 21 Delivery Charge
                                     $20</button>
                             </div>
                         </div>
@@ -95,20 +103,20 @@
                             </tr>
                             <tr>
                                 <td>Extra Memory Cost</td>
-                                <td>$0</td>
+                                <td>$<span id="extra-memoryPrice">0</span></td>
                             </tr>
                             <tr>
                                 <td>Extra Storage Cost</td>
-                                <td>$0</td>
+                                <td>$<span id="extra-storageCost">0</td>
                             </tr>
                             <tr>
                                 <td>Delevery Charge</td>
-                                <td>$0</td>
+                                <td>$<span id="extra-deleveryCharge">0</td>
                             </tr>
                             <tfoot class="border-t-2 border-black">
                                 <tr>
                                     <td>Total Price</td>
-                                    <td>$1299</td>
+                                    <td>$<span id="totalPrice">1299</span></td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -126,9 +134,13 @@
             <div class="total_of_total text-center">
                 <h1 class="text-3xl p-4 m-6 rounded-2xl font-bold bg-red-200">Total: $<span>1299</span></h1>
             </div>
+            <!-- end total of total part -->
         </section>
     </main>
 
+
+    <!-- connection with main.js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
