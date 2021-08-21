@@ -71,12 +71,14 @@ function totalPrice(pomo) {
 
         pomoMessage.innerText = "Seccessfully pomo added";
         pomoMessage.style.color = "green";
+        totalOfTotalPrice.parentElement.style.backgroundColor = "rgba(0, 128, 0, 0.300)";
 
     }
     else if (pomo === false) {
         totalOfTotalPrice.innerText = total;
-        pomoMessage.innerText = "Add pomo code";
+        pomoMessage.innerText = "Add Pomo code";
         pomoMessage.style.color = "red";
+        totalOfTotalPrice.parentElement.style.backgroundColor = "#FECACA";
     }
 }
 
